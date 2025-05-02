@@ -26,6 +26,10 @@ body{
 
 img{
   border-radius: 16px;
+  width: 100%;
+  height: 380px; /* um pouquinho menor pra focar melhor */
+  object-fit: cover;
+  object-position: center 10%; /* Mover mais pro topo manualmente */
 }
 
 main{
@@ -59,12 +63,16 @@ ul {
   padding-left: 24px;
 }
 
-footer{
-  color: #5d573f;
+footer {
   text-align: center;
-  padding-bottom: 48px;
+  font-size: 16px;
+  color: #5d573f;
 }
 
-footer img{
-  vertical-align: middle;
+footer img {
+  width: 16px; /* força a largura */
+  height: 16px; /* força a altura */
+  object-fit: contain; /* garante que não vai esticar ou cortar */
+  vertical-align: middle; /* deixa alinhado ao texto */
+  filter: brightness(0.5)
 }
